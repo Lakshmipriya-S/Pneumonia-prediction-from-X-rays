@@ -1,0 +1,36 @@
+{% extends "main.html" %}
+{% block content %}
+
+<div class="container py-5">
+
+
+    <header class="text-white text-center">
+        <h1 class="display-4">Pneumonia X-Ray</h1>
+        <p class="lead mb-0">Prediction of Pneummonia from X-Rays</p>
+    </header>
+
+
+    <div class="row py-4">
+        <form class="col-lg-6 mx-auto" method="POST" action="/Pneumonia" enctype="multipart/form-data">
+
+            
+            <div class="input-group mb-3 px-2 py-2 rounded-pill bg-white shadow-sm">
+                <input id="upload" type="file" onchange="readURL(this);" class="form-control border-0" name="file">
+                <label id="upload-label" for="upload" class="font-weight-light text-muted">Choose file</label>
+                <div class="input-group-append">
+                    <label for="upload" class="btn btn-light m-0 rounded-pill px-4"> <i class="fa fa-cloud-upload mr-2 text-muted"></i><small class="text-uppercase font-weight-bold text-muted">Choose file</small></label>
+                </div>
+            </div>
+  
+            <p class="font-italic text-white text-center">The X-Ray you have uploaded is Predicted to be</p>
+            <div class="image-area mt-4"><img id="imageResult" src="#" alt="" class="img-fluid rounded shadow-sm mx-auto d-block"></div>
+            <div class="text-center">
+            </div>
+            <div class="text-center">
+            <button type="submit" class="btn btn-primary">Pneumonia Test</button>
+            </div>
+        </form>
+    </div>
+  </div>
+
+{% endblock %}

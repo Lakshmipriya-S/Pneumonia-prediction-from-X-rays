@@ -1,0 +1,25 @@
+{% extends "main.html" %}
+{% block content %}
+
+<div class="text-center">
+  <img src="{{ url_for('static', filename= filename) }}"  alt="" class="img-fluid img-thumbnail" id="A">
+</div>
+<br>
+<br>
+<center>
+
+    {% if text=="healthy"  %}
+    <h3><span class="badge badge-success">{{text}}</span></h3>
+    {%endif%}
+
+    {% if text=="pneumonic" %}
+    <h3><span class="badge badge-danger">{{text}}</span></h3>
+    {%endif%}
+
+    <br>
+
+    <a href="/" class="btn btn-info" role="button">Go Back</a>
+    <br>
+</center>
+
+{% endblock %}

@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+#upload {
+    opacity: 0;
+}
+
+#upload-label {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+}
+
+.image-area {
+    border: 2px dashed rgba(255, 255, 255, 0.7);
+    padding: 1rem;
+    position: relative;
+}
+
+.image-area::before {
+    content: 'Uploaded image result';
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.8rem;
+    z-index: 1;
+}
+
+.image-area img {
+    z-index: 2;
+    position: relative;
+}
+
+
+/* Body */
+
+body {
+    min-height: 100vh;
+    /*background-color: #757f9a;*/
+    background-color: #777875;
+    /*background-image: linear-gradient(147deg, #757f9a 0%, #d7dde8 100%);*/
+    background-image: linear-gradient(140deg, #7a7b77 0%, #d7dde8 100%);
+    line-height: 1.5;
+    font-family: 'poppins', sans-serif;
+}
+
+
+.text-center {
+    text-align: center;
+    margin:20px;
+  }
+#A {
+    width: 400px; 
+    height: 400px;
+}
+
+center{
+    margin: 20px;
+}
+
+.dropdown-menu {
+    display: block;
+    visibility: hidden;
+    opacity:0;
+    transform: translateY(50px);
+    transition:.5s ease all;
+}
+.dropdown-menu.show {
+    display: block;
+    visibility: visible;
+    opacity:1;
+    transform: translateY(0px);
+    transition:.5s ease all;
+}
+
+.container{
+    max-width: 1170px;
+    margin:auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style: none;
+}
+  
+.footer{
+     background-color: #24262b;
+     padding: 50px 0;
+ }
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4{
+    font-size: 18px;
+    color:#ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px; 
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    color:#ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+@media(max-width: 767px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+}
+
+@media(max-width: 767px){
+    .footer-col{
+        width: 100%;
+    }
+
+}
+
+li{
+  
+display:inline; 
+
+}
+
+.column{
+    float:left;
+    width:20%;
+    padding:5px;
+
+}
+
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+  }
+  
+  /* Fake image */
+  .fakeimg {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+     background-color: rgb(121, 120, 120);
+     padding: 20px;
+     margin-top: 20px;
+     text-align: center;
+     height: 440px;
+  }
+
+
+  /* next column */
+.nextcolumn {
+    float: left;
+    width: 40%;
+    padding-left: 20px;
+  }
+  
+  /* next image */
+  .nextfakeimg {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 90px;
+    padding: 20px;
+  }
+  
+  /* Add a card effect for articles */
+  .nextcard {
+     background-color: rgb(121, 120, 120);
+     padding: 20px;
+     
+     height: 440px;
+     text-align: center;
+  }
+
+/* third column */
+.thirdcolumn {
+    float: left;
+    width: 30%;
+    padding-left: 20px;
+  }
+  
+  /* third image */
+  .thirdfakeimg {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Add a card effect for articles */
+  .thirdcard {
+     background-color: rgb(121, 120, 120);
+     padding: 20px;
+     
+     height: 440px;
+     text-align: center;
+  }
+
+.all{
+    padding: 20px;
+}
+.last{
+    
+    padding: 420px 100px 62px 100px;
+}
